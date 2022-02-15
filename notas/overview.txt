@@ -22,3 +22,23 @@ Docker & Kubernetes
  deploy serviços da plataforma
  Acesso Externo
  -------------------------------------------------------------------------------
+
+Implementação de Serviço
+    Scaffolding
+    Controller & Actions
+    Synchronous & Asynchonous Messaging
+    Adding a HTTP client
+    deploy service to Kubernetes
+    Internal Networking
+    API Gatway 
+
+SQL SERVER
+    Persistent Volume Claims 
+    Kubernetes Secrets
+    deploy SQL Server to Kubernetes
+    Revisit plataform service
+
+Multi Resource API
+    Review of Endpoints for Commands service
+    Data layer
+    Controllers & Actions
