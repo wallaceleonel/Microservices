@@ -1,0 +1,24 @@
+Intro & Teoria
+ Overview dos microserviços
+ ferramentas 
+ O que são microserviços ?
+ Seus serviços
+ Solução de arquitetura
+ Serviço de arquitetura
+
+ --------------------------------------------------------------------------
+Iniciando os serviços
+ Overview
+ Scaffolding
+ Data layer
+ Controllers and & Actions
+ ----------------------------------------------------------------------------
+Docker & Kubernetes
+ Review do docker 
+ costumizando a plataforma de servico 
+ docker hub
+ o que e Kubernetes
+ arquitetura do Kubernetes
+ deploy serviços da plataforma
+ Acesso Externo
+ -------------------------------------------------------------------------------
