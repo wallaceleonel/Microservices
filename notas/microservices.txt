@@ -35,3 +35,17 @@ MONOLITO
                     setor estão mais altas ou estão mais baixar ou qual setor usa mais recursos e o que usa menos em diferentes periodos.
                     Esse fato ocorre pois sua aplicação e desenhada para atender um todo e voce so possui a visão desse todo, ou seja o uso de recursos também se tem 
                     a visão de um todo e não por partes 
+
+    Arquiteturas como essas tem muita dificuldade quando precisam expandir pois tem que duplicar recursos como um todo e não por partes.
+
+Vantagens dos microserviços
+    As Vantagens dos microserviços meio que vão de contraste a todo formato do monolito, a onde o monolito e engessado não permitindo voce expandir por partes e não pelo todo,microserviços
+    trazem essa versatilidade no desenvolvimento.A vantagem mais clara que essa ideia de Arquitetura de software traz e a possibilidade de se escalar tanto
+    na vertical quanto na horizontal o seu projeto, não e necessario duplicar toda a sua extrutura para atender uma unica area.
+
+    - São desacoplados 
+    - usam diversas tecnologias
+    - sua aplicação não depende de um unico bloco 
+    - segurança na disponibilidade da aplicação, tendo em vista que cada serviços opera em conjunto porem sua disponibilidade e isolada ou seja
+    se por ventura uma aplicação cair, seu sistema não ira cair por completo.
+    
