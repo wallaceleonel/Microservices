@@ -48,6 +48,8 @@ namespace PlatformService.Controllers
                 _repository.SaveChanges();
 
                 var PlatformReadDto = _mapper.Map<PlatformReadDto>(PlatformModel);
+
+                return CreatedAtRoute(nameof(GetPlatformById), new { Id = PlatformReadDto.Id}, PlatformReadDto);
         }
     }     
 }
