@@ -1,5 +1,8 @@
+using System;
+using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using PlatformService.Models;
 
 namespace PlatformService.Data
 {
@@ -14,7 +17,22 @@ namespace PlatformService.Data
         }
         private static void SeedData(AppDbContext context)
         {
+            if(!context.Platforms.Any())
+            {
+                 Console.WriteLine("--> We already have data");
 
+                context.Platforms.AddRange(
+                    new Platform() {Name="Dot Net", Publisher="Microsoft", Cost="free"},
+                    new Platform() {Name="SQL Server Express", Publisher="Microsoft", Cost="free"},
+                    new Platform() {Name="Kubernetes", Publisher="Cloud Native Computing Foudantion", Cost="free"}
+                );                 
+                
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("--> We already have data");
+            }
         }
     }
 }
