@@ -29,5 +29,15 @@ namespace PlatformService.Controllers
 
             return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(PlatformItem));
         }
+        [HttpGet("{id}", Name ="GetPlatformById")]
+        public ActionResult<PlatformReadDto> GetPlatformById(int id)
+        {
+            var PlatformItem = _repository.GetPlatformById(id);
+            if(PlatformItem != null)
+            {
+                return Ok(_mapper.Map<PlatformReadDto>(PlatformItem));
+            }
+            return NotFound();
+        }
     }     
 }
