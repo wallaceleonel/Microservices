@@ -46,6 +46,8 @@ namespace PlatformService.Controllers
                 var PlatformModel = _mapper.Map<Platform>(platformCreateDto);
                 _repository.CreatePlatform(PlatformModel);
                 _repository.SaveChanges();
+
+                var PlatformReadDto = _mapper.Map<PlatformReadDto>(PlatformModel);
         }
     }     
 }
