@@ -1,0 +1,16 @@
+Doker Revisão
+
+Doker é a conteinirização de uma plataforma ou seja, é um sistema que me permite
+provisionar recursos de maneira isolada para então rodar sistemas dentro de "contairnes " de forma isolada.
+
+Suponhamos que dentro de uma empresa tenho meus servidores e recursos computacionais, ao preparar um ambiente para 
+um desenvolvedor fazer testes da nova versão de nosso produto, com docker posso criar um "container " ou seja 
+um ambiente isolado dentro de meus sistmas para que o desenvolvedor possa trabalhar.
+
+Doker cria todo esse ambiente com base em um script chamado de imagem e podendo então ser executado 
+seja em uma maquina pessoal ou em cloud, se tem esse modelo de area de trabalho pré-definido.
+
+
+A containerização a pesar de parecer uma maquina virutal ela se diferencia pelo uso de recursos, enquanto em uma maquina
+virutal é necessario a criação de um sistema dentro de outro sistema para então roda um programa, em docker pulamos essas etapas 
+e carregamos somente a imagem do programa, reduzindo então tempo e custo de recursos.
