@@ -1,8 +1,8 @@
 
-O ASP.NET Core  dá suporte ao padrão de design de software de injeção de depencencia (DI),
-que é um tecnica para obter a Inversão de Controle (IoC) entre classes e suas dependencias.
+O ASP.NET Core dá suporte ao padrão de design de software de injeção de dependência (DI),
+que é uma técnica para obter a Inversão de Controle (IoC) entre classes e suas dependências.
 
-Uma depencencia é um objeto do qual o outro objeto dependende.
+Uma dependência é um objeto do qual o outro objeto dependente.
 
 -------------------------------------------------------------------------------------
 public class MyDependency
@@ -14,30 +14,30 @@ public class MyDependency
 }
 --------------------------------------------------------------------------------------
 
-Seguindo o principio de "cada um por si " em nosso codigo entregando mais autonomia as nossas classes, saber usar o metodo injeção de idependencia 
-podemos abristair melhor esse conceito.
-Tendo em vista que embora criamos classes individuais, elas sempre vão dependender de alguma e isso implica quando precisa fazer mudanças ou reestruturar o codigo.
+Seguindo o princípio de "cada um por si " em nosso código entregando mais autonomia as nossas classes, saber usar o método injeção de independência 
+podemos atristar melhor esse conceito.
+Tendo em vista que embora criamos classes individuais, elas sempre vão dependente de alguma e isso implica quando precisa fazer mudanças ou reestruturar o código.
 
-Com injeção de depencencia podemos então fazer nossa classe depender não de uma instancia mas de um metodo construtor e nesse metodo , atribuir uma interface de serviço
-sendo assim qualquer mudanças ou problemas a interface ira chamar outros metodos declarados dentro da mesma.
+Com injeção de dependência podemos então fazer nossa classe depender não de uma instancia, mas de um método construtor e nesse método, atribuir uma interface de serviço
+sendo assim quaisquer mudanças ou problemas a interface irá chamar outros métodos declarados dentro dela.
 
-Também posso ter uma interface que atende outras classes embora isso fuja do principio de idependencia no codigo, contudo usando deste metodo fica mais pratico realizar mudanças ou manutenções no codigo 
-tendo em vista que irei operar com o metodo que o mesmo dependede e não com toda a sua estrutura.
+Também posso ter uma interface que atende outras classes embora isso fuja do princípio de independência no código, contudo usando deste método fica mais prático realizar mudanças ou manutenções no código 
+tendo em vista que irei operar com o método que o mesmo depende de e não com toda a sua estrutura.
 
 (PADRÔES STRAGEI FAZER USO DESTE METODO DE CONSTRUÇÃO E PADRÃO DE CODIGO.)
 
-Com tudo a INGEÇÃO DE idependencia pode ser feita de 3 metodos
+Com tudo a INGEÇÃO DE independência pode ser feita de 3 métodos
 
-metodo construtor ( dado como exemplo no contexto acima )
+método construtor ( dado como exemplo no contexto acima )
 
 Setter injection.
 
-Posso fazer o uso dessa pratica declarando { get set } e ultilizando em minha chamada fazendo e claro o uso da minha interface para realizar a aplicação da depencencia.
+Posso fazer o uso dessa pratica declarando { get set } e utilizando em minha chamada fazendo e claro o uso da minha interface para realizar a aplicação da dependência.
 
 
-method injection ou interface injection.
+method injection or interface injection.
 
 
 
 
-Sendo o codigo fica dependende de ABSTRAÇÕES que é uma inteface e não de uma implementação como um metodo "new" por exemplo.
+Sendo o código fica dependente de ABSTRAÇÕES que é uma interface e não de uma implementação como um método "new" por exemplo.
