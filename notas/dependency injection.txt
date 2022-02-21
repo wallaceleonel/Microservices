@@ -32,7 +32,12 @@ metodo construtor ( dado como exemplo no contexto acima )
 
 Setter injection.
 
-Posso fazer o uso dessa pratica declarando { get set } e ultilizando em minha chamada 
+Posso fazer o uso dessa pratica declarando { get set } e ultilizando em minha chamada fazendo e claro o uso da minha interface para realizar a aplicação da depencencia.
 
 
 method injection ou interface injection.
+
+
+
+
+Sendo o codigo fica dependende de ABSTRAÇÕES que é uma inteface e não de uma implementação como um metodo "new" por exemplo.
