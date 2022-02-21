@@ -1,0 +1,4 @@
+Kubernets ou se preferir chamar , cebola rs ....
+visão em camadas 
+
+Kubernets é um orquestrador de containers 
