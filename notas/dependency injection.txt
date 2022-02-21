@@ -1,0 +1,38 @@
+
+O ASP.NET Core  dá suporte ao padrão de design de software de injeção de depencencia (DI),
+que é um tecnica para obter a Inversão de Controle (IoC) entre classes e suas dependencias.
+
+Uma depencencia é um objeto do qual o outro objeto dependende.
+
+-------------------------------------------------------------------------------------
+public class MyDependency
+{
+    public void WriteMessage(string message)
+    {
+        Console.WriteLine($"MyDependency.WriteMessage called. Message: {message}");
+    }
+}
+--------------------------------------------------------------------------------------
+
+Seguindo o principio de "cada um por si " em nosso codigo entregando mais autonomia as nossas classes, saber usar o metodo injeção de idependencia 
+podemos abristair melhor esse conceito.
+Tendo em vista que embora criamos classes individuais, elas sempre vão dependender de alguma e isso implica quando precisa fazer mudanças ou reestruturar o codigo.
+
+Com injeção de depencencia podemos então fazer nossa classe depender não de uma instancia mas de um metodo construtor e nesse metodo , atribuir uma interface de serviço
+sendo assim qualquer mudanças ou problemas a interface ira chamar outros metodos declarados dentro da mesma.
+
+Também posso ter uma interface que atende outras classes embora isso fuja do principio de idependencia no codigo, contudo usando deste metodo fica mais pratico realizar mudanças ou manutenções no codigo 
+tendo em vista que irei operar com o metodo que o mesmo dependede e não com toda a sua estrutura.
+
+(PADRÔES STRAGEI FAZER USO DESTE METODO DE CONSTRUÇÃO E PADRÃO DE CODIGO.)
+
+Com tudo a INGEÇÃO DE idependencia pode ser feita de 3 metodos
+
+metodo construtor ( dado como exemplo no contexto acima )
+
+Setter injection.
+
+Posso fazer o uso dessa pratica declarando { get set } e ultilizando em minha chamada 
+
+
+method injection ou interface injection.
