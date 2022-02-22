@@ -11,7 +11,6 @@ spec:
     metadata:
       labels:
         app: platformservice
-    
     spec:
       containers:
         - name: platformservice
