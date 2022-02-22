@@ -2,3 +2,54 @@ Kubernets ou se preferir chamar , cebola rs ....
 visão em camadas 
 
 Kubernets é um orquestrador de containers 
+
+Arquitetura Kubernets
+
+temos em nosso ambiente algumas coisas que não vamos entrar em detalhes neste momento porem antecede o uso do Kubernets em nosso projeto 
+neste modelo estamos usando :
+
+Hardware pc 
+win 10 pro wls2
+containers (docker)
+Kubernets(docker desktop)
+
+
+Visão geral de nosso porjeto : 
+
+Cluster 
+  - Node 
+    - Pod
+        [Platform service
+        container 80 664]
+        Cluster IP
+    -Node Port 
+        3xxxx 80
+    
+    - Pod
+        Command Service container
+        80
+        Cluster IP 
+
+    - Pod
+        ingress Nginx
+        Container 
+        80
+
+    - ingress Nginx
+        Load Balancer 
+        80
+
+    -Pod
+        Platform SQL 
+        Server Conteiner 
+        1433
+        Cluster IP
+            Persistent Volume Claim
+
+
+    -Pod 
+        RabbitMQ
+        Container 
+        5672 15672
+        Cluster IP
+    
