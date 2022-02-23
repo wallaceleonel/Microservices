@@ -12,7 +12,7 @@ como ate mesmo não encontrar este individuo em um determinado por exemplo. Um m
 um serviço que contratamos e que garantira o envio dessa mensagem de forma segura, em um sistema ocorre de forma similar ou seja ultilizamos um software ou serviço para gerenciar essa entrega de mensagens entre meus sistemas.
 
 
-Tipos
+Tipes
 
 Synchoronous Messaging 
     
@@ -41,3 +41,4 @@ service A    service B        service C
 -------------------------------------
 |             Mesage Bus            |
 -------------------------------------
+
