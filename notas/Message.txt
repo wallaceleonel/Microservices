@@ -6,6 +6,11 @@ Esse recurso permite que dois sistemas diferentes possam se comunicar entre si a
 Se precisamos nos comunicar do ponto A ao ponto B, o metodo de comunicação assincrona envia a mensagem sem precisar ficar me alertando a rota,o serviço so me avisa 
 se por ventura não consegui comunicação ou seja apresentar erro no envio e não durante.Não precisa esperar, ela é feita de forma estantena ou seja assincrona.
 
+A grosso modo funcionaria da seguinte maneira, se o ponto A fosse um individuo e o ponto B outro.
+Para o individuo A entregar algo ao individuo B precisaria ir ate este individuo e poderia encontrar alguns dificuldades no caminho 
+como ate mesmo não encontrar este individuo em um determinado por exemplo. Um metodo convencional ultilizado para esse tipo de comunicação e o carteiro 
+um serviço que contratamos e que garantira o envio dessa mensagem de forma segura, em um sistema ocorre de forma similar ou seja ultilizamos um software ou serviço para gerenciar essa entrega de mensagens entre meus sistemas.
+
 
 Tipos 
 Synchoronous Messaging 
