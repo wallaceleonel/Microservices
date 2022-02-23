@@ -12,9 +12,32 @@ como ate mesmo não encontrar este individuo em um determinado por exemplo. Um m
 um serviço que contratamos e que garantira o envio dessa mensagem de forma segura, em um sistema ocorre de forma similar ou seja ultilizamos um software ou serviço para gerenciar essa entrega de mensagens entre meus sistemas.
 
 
-Tipos 
+Tipos
+
 Synchoronous Messaging 
+    
     - Request/Response Cycle
     - Resquester will "wait" for Response
     - Exrternally facing services usually Synchoronous ( e.g http request)
-    - 
+    - Service usually need to "know" about each other
+    - We are usinf 2 forms:
+        - http
+        - Grpc
+    
+Asynchronous Messaging
+    
+    - No request/response Cycle
+    - Resquester does no wait
+    - Evente model, e.g publish -subscrible
+    - Typically used between services
+    - Event bus is often used (we´ll be using RabbitMQ)
+    - Services don´t nedd to know about each other,just the bus
+    - Introduces its own range of complexities - not a magic bullet 
+
+                                                    - To some extente yes 
+                                                    - Internal comms 
+service A    service B        service C            
+   |             |               |
+-------------------------------------
+|             Mesage Bus            |
+-------------------------------------
