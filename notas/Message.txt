@@ -4,7 +4,8 @@ Menssageria é um conceito que define que sistemas distribuidos possam se comuni
 sendo estas mensagens 'gerenciadas' por um Message Brocker (servidor /modulo de mensagens).
 Esse recurso permite que dois sistemas diferentes possam se comunicar entre si atraves de troca de mensagens de forma assincrona, o que isso signica:
 Se precisamos nos comunicar do ponto A ao ponto B, o metodo de comunicação assincrona envia a mensagem sem precisar ficar me alertando a rota,o serviço so me avisa 
-se por ventura não consegui comunicação ou seja apresentar erro no envio e não durante.
+se por ventura não consegui comunicação ou seja apresentar erro no envio e não durante.Não precisa esperar, ela é feita de forma estantena ou seja assincrona.
+
 
 Tipos 
 Synchoronous Messaging 
