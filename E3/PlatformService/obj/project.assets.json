@@ -6083,19 +6083,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A1935759\\Microservices\\PlatformService\\PlatformService.csproj",
+      "projectUniqueName": "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\PlatformService.csproj",
       "projectName": "PlatformService",
-      "projectPath": "C:\\Users\\A1935759\\Microservices\\PlatformService\\PlatformService.csproj",
+      "projectPath": "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\PlatformService.csproj",
       "packagesPath": "C:\\Users\\A1935759\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A1935759\\Microservices\\PlatformService\\obj\\",
+      "outputPath": "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\A1935759\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\A1935759\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
