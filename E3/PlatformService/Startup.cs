@@ -56,7 +56,7 @@ namespace PlatformService
             Console.WriteLine($" ---> CommandSerrive Endpoint {Configuration ["CommandService"]}");
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
