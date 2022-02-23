@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using PlatformService.Data;
 using PlatformService.Dtos;
 using PlatformService.Models;
+using PlatformService.SyncDataServices.Http;
 
 namespace PlatformService.Controllers
 {
@@ -14,11 +16,16 @@ namespace PlatformService.Controllers
     {
         private readonly IPlatformRepo _repository;
         private readonly IMapper _mapper;
+        private readonly ICommandDataClient _commandDataClient;
 
-        public PlatformsController(IPlatformRepo repository, IMapper mapper) 
+        public PlatformsController(
+            IPlatformRepo repository,
+             IMapper mapper,
+             ICommandDataClient commandDataClient) 
         {
             _repository = repository;
-            _mapper = mapper;           
+            _mapper = mapper;
+            _commandDataClient = commandDataClient;           
         }
 
           [HttpGet]
@@ -41,13 +48,21 @@ namespace PlatformService.Controllers
             return NotFound();
         }
         [HttpPost]
-        public ActionResult<PlatformReadDto> CreatPlatform(PlatformCreateDto platformCreateDto)
+        public async Task<ActionResult<PlatformReadDto>> CreatPlatform(PlatformCreateDto platformCreateDto)
         {
                 var PlatformModel = _mapper.Map<Platform>(platformCreateDto);
                 _repository.CreatePlatform(PlatformModel);
                 _repository.SaveChanges();
 
                 var PlatformReadDto = _mapper.Map<PlatformReadDto>(PlatformModel);
+
+                try{
+                    await _commandDataClient.SendPlatformToCommand(PlatformReadDto);      
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine($"--> Could not send synchrously: {ex.Message}");
+                }
 
                 return CreatedAtRoute(nameof(GetPlatformById), new { Id = PlatformReadDto.Id}, PlatformReadDto);
         }
