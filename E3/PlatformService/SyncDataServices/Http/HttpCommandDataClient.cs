@@ -25,7 +25,7 @@ namespace PlatformService.SyncDataServices.Http
                 Encoding.UTF8,
                 "apllication/json");
 
-            var response = await _HttpClient.PatchAsync(" http://localhost:6000/api/c/platforms/", HttpContent);
+            var response = await _HttpClient.PatchAsync($"{_configuration["CommandService"]}", HttpContent);
 
             if( response.IsSuccessStatusCode)
             {
