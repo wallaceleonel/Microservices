@@ -1,7 +1,9 @@
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using PlatformService.Dtos;
 
 namespace PlatformService.SyncDataServices.Http
@@ -9,10 +11,12 @@ namespace PlatformService.SyncDataServices.Http
     public class HttpCommandDataClient : ICommandDataClient
     {
         private readonly HttpClient _HttpClient;
+        private readonly IConfiguration _configuration;
 
-        public HttpCommandDataClient(HttpClient httpClient)
+        public HttpCommandDataClient(HttpClient httpClient ,IConfiguration configuration)
         {
             _HttpClient = httpClient;
+            _configuration = configuration;
         }
         public async Task SendPlatformToCommand(PlatformReadDto plat)
         {
@@ -22,6 +26,15 @@ namespace PlatformService.SyncDataServices.Http
                 "apllication/json");
 
             var response = await _HttpClient.PatchAsync(" http://localhost:6000/api/c/platforms/", HttpContent);
+
+            if( response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("-----> Sync POST to CommandService was OK!");
+            }
+            else
+            {
+                Console.WriteLine("-----> Sync POST to CommandService was NOT OK!");
+            }
         }
     }
 }
