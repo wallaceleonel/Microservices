@@ -17,11 +17,11 @@ spec:
           image: mcr.microsoft.com/mssql/server:2017-latest
           ports:
             - containerPort: 1433
-            env:
-              - name: MSSQL_PID
-                value: "Express"
-              - name: Accept_EULA
-                value: "Y"
-              - name: SA_PASSWORD
-                
+          env:
+            - name: MSSQL_PID
+              value: "Express"
+            - name: Accept_EULA
+              value: "Y"
+            - name: SA_PASSWORD
+
 
