@@ -132,3 +132,4 @@ C:\Users\A1935759\Microservices\E3\Platformservice\obj\Debug\net5.0\refint\Platf
 C:\Users\A1935759\Microservices\E3\Platformservice\obj\Debug\net5.0\PlatformService.pdb
 C:\Users\A1935759\Microservices\E3\Platformservice\obj\Debug\net5.0\PlatformService.genruntimeconfig.cache
 C:\Users\A1935759\Microservices\E3\Platformservice\obj\Debug\net5.0\ref\PlatformService.dll
+C:\Users\A1935759\Microservices\E3\Platformservice\bin\Debug\net5.0\appsettings.Production.json
