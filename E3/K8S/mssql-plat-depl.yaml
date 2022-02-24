@@ -20,7 +20,7 @@ spec:
           env:
           - name: MSSQL_PID
             value: "Express"
-          - name: Accept_EULA
+          - name: ACCEPT_EULA
             value: "Y"
           - name: SA_PASSWORD
             valueFrom:
@@ -38,7 +38,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-    name: mssql-clusterip-srv
+  name: mssql-clusterip-srv
 spec:
   type: ClusterIP
   selector:
@@ -52,13 +52,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-    name: mssql-loadbalancer
+  name: mssql-loadbalancer
 spec:
   type: LoadBalancer
   selector:
     app: mssql
   ports:
-  - name: mssql
-    protocol: TCP
+  - protocol: TCP
     port: 1433
     targetPort: 1433
