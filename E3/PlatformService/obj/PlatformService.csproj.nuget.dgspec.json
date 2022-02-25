@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\PlatformService.csproj": {}
+    "C:\\Users\\A1935759\\Microservices\\E3\\PlatformService\\PlatformService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\PlatformService.csproj": {
+    "C:\\Users\\A1935759\\Microservices\\E3\\PlatformService\\PlatformService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\PlatformService.csproj",
+        "projectUniqueName": "C:\\Users\\A1935759\\Microservices\\E3\\PlatformService\\PlatformService.csproj",
         "projectName": "PlatformService",
-        "projectPath": "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\PlatformService.csproj",
+        "projectPath": "C:\\Users\\A1935759\\Microservices\\E3\\PlatformService\\PlatformService.csproj",
         "packagesPath": "C:\\Users\\A1935759\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A1935759\\Microservices\\E3\\Platformservice\\obj\\",
+        "outputPath": "C:\\Users\\A1935759\\Microservices\\E3\\PlatformService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A1935759\\AppData\\Roaming\\NuGet\\NuGet.Config",
