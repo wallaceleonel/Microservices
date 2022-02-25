@@ -27,7 +27,6 @@ namespace PlatformService.Controllers
             _mapper = mapper;
             _commandDataClient = commandDataClient;           
         }
-
           [HttpGet]
         public ActionResult<IEnumerable<PlatformReadDto>> GetPlatforms()
         {
@@ -56,7 +55,8 @@ namespace PlatformService.Controllers
 
                 var PlatformReadDto = _mapper.Map<PlatformReadDto>(PlatformModel);
 
-                try{
+                try
+                {
                     await _commandDataClient.SendPlatformToCommand(PlatformReadDto);      
                 }
                 catch(Exception ex)
