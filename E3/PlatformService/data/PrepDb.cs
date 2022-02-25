@@ -20,7 +20,15 @@ namespace PlatformService.Data
         {
             if(isProd)
             {
+                Console.WriteLine("---> Attempting to apply migrations...");
+                try
+                {
                 context.Database.Migrate();
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine($"--> Could not run migrations : {ex.Message}");
+                }
             }
             if(!context.Platforms.Any())
             {
