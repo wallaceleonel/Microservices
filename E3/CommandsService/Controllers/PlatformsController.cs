@@ -20,4 +20,3 @@ namespace CommandsService.Controllers
         }
     }
 }
-    
