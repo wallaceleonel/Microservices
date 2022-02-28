@@ -4,6 +4,6 @@ namespace CommandService.models
     {
         public int Id {get; set;}
         public int ExternalID { get; set; }
-        public string  Name { get; set; }
+        public string  Name { get; set;}
     }
 }
