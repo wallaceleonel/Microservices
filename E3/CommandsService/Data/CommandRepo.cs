@@ -56,6 +56,12 @@ namespace CommandsService.Data
         {
             return _context.Platforms.Any(p => p.Id == PlatformId);
         }
+
+        public bool PlatformExists(object platformId)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool SaveChanges()
         {
            return (_context.SaveChanges() >= 0);  

@@ -17,6 +17,7 @@ namespace CommandsService.Data
         IEnumerable<Command> GetCommandsForPlatform(int PlatformId);
         Command GetCommand(int platformId, int commandId);
         void CreateCommand(int platformId,  Command command);
+        bool PlatformExists(object platformId);
     }
 
 }
