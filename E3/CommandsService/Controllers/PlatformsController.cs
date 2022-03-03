@@ -12,8 +12,6 @@ namespace CommandsService.Controllers
     {
         private ICommandRepo _repository;
         private IMapper _mapper;
-        
-        
         public PlatformsController(ICommandRepo repository, IMapper mapper)
         {
             _repository = repository;
