@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using CommandService.models;
 
-namespace CommandService.Models
+namespace CommandsService.Models
 {
     public class Command
     {

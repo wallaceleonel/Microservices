@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using CommandService.Models;
+using CommandsService.Models;
 
 namespace CommandService.models
 {

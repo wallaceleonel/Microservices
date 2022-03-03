@@ -1,5 +1,5 @@
 using CommandService.models;
-using CommandService.Models;
+using CommandsService.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CommandsService.Data
