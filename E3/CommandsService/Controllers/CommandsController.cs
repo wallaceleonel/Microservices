@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using AutoMapper;
 using CommandsService.Data;
 using CommandsService.Dtos;
+using CommandsService.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CommandsService.Controllers
@@ -46,6 +47,26 @@ namespace CommandsService.Controllers
                 return NotFound();
             }
             return Ok(_mapper.Map<CommandReadDto>(command)); 
-         }            
+        }
+        [HttpPost]
+        public ActionResult<CommandReadDto> CreateCommandForPlaform(int platformId,CommandCreateDto commandDto)
+        {
+             Console.WriteLine($"--> Hit CreateCommandForPlaform :{platformId}");
+
+            if (!_repository.PlatformExists(platformId))
+            {
+                return NotFound();
+            }
+
+            var command = _mapper.Map<Command>(commandDto);
+
+            _repository.CreateCommand(platformId,command);
+            _repository.SaveChanges();
+
+            var CommandreadDto = _mapper.Map<CommandReadDto>(command);
+
+            return CreatedAtRoute(nameof(GetCommandForPlatform),
+                new {platformId = platformId, commandId = CommandreadDto.Id},CommandreadDto);
+        }
     }
 }
