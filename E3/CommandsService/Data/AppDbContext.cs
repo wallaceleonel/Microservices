@@ -8,7 +8,7 @@ namespace CommandsService.Data
     {
          public AppDbContext(DbContextOptions<AppDbContext> opt) : base (opt)
          {
-
+ 
          }
          public DbSet<platform> Platforms {get; set;}
          public DbSet<Command> Commands {get; set;}
