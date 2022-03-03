@@ -2,7 +2,7 @@ using CommandService.models;
 using CommandService.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CommandService.Data
+namespace CommandsService.Data
 {
     public class AppDbContext : DbContext
     {
