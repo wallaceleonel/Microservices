@@ -8,10 +8,10 @@ spec:
     matchLabels:
       app: rabbitmq
   template:
-     metadata:
-       labels:
-         app: rabbitmq
-     spec:
+    metadata:
+      labels:
+        app: rabbitmq
+    spec:
       containers:
         - name: rabbitmq
           image: rabbitmq:3-management
@@ -34,7 +34,7 @@ spec:
     protocol: TCP
     port: 15672
     targetPort: 15672
-  - name: rbmq-mgmt-port
+  - name: rbmq-msg-port
     protocol: TCP
     port: 5672
     targetPort: 5672
@@ -52,7 +52,7 @@ spec:
     protocol: TCP
     port: 15672
     targetPort: 15672
-  - name: rbmq-mgmt-port
+  - name: rbmq-msg-port
     protocol: TCP
     port: 5672
     targetPort: 5672
