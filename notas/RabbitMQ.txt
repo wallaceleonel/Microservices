@@ -1,0 +1,33 @@
+
+A Message Brocker - it accerpts and forwards Messages
+
+Messages are sent by producers ( or publishers)
+
+Mesages are received by consumers (or subscriblers)
+
+Mesages are stored on queues ( essentially a Message buffer )
+
+Exchanges can be used to add " routing " functionality
+
+Uses Advanced Message Queuing Protocol ( AMQP) & others
+
+    
+    -  Exchanges
+        4 tips of exchanges
+
+           - Direct exchanges
+
+           - Fanout exchanges
+           
+           - Topic  exchanges
+           
+           - Header exchanges 
+
+    Delivers messages to queues based on a routing key 
+    Ideal for "direct" or unicast messaging 
+
+        Fanout :
+            Delivers messages to all queues that are bound to the exchange
+            it ignores hte routing key 
+            ideal for broadcast messages 
+            
