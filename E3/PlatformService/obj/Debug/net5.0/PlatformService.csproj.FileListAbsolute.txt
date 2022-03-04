@@ -133,3 +133,4 @@ C:\Users\A1935759\Microservices\E3\Platformservice\obj\Debug\net5.0\PlatformServ
 C:\Users\A1935759\Microservices\E3\Platformservice\obj\Debug\net5.0\PlatformService.genruntimeconfig.cache
 C:\Users\A1935759\Microservices\E3\Platformservice\obj\Debug\net5.0\ref\PlatformService.dll
 C:\Users\A1935759\Microservices\E3\Platformservice\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\A1935759\Microservices\E3\PlatformService\bin\Debug\net5.0\RabbitMQ.Client.dll
