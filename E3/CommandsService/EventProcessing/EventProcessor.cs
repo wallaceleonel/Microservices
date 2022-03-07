@@ -2,6 +2,7 @@ using System;
 using System.Text.Json;
 using AutoMapper;
 using CommandService.Dtos;
+using CommandsService.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CommandService.EventProcessing
@@ -46,6 +47,14 @@ namespace CommandService.EventProcessing
                 default:
                     Console.WriteLine("---> Could not determine the event type");
                     return EventType.Undetermined;
+            }
+        }
+
+        private void addPlatform(string platformPublshedMessage)
+        {
+            using ( var scope = _scopeFactory.CreateAsyncScope())
+            {
+                var repo = scope.ServiceProvider.GetRequiredService<ICommandRepo>();
             }
         }
     }
