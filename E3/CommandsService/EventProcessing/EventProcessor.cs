@@ -18,7 +18,18 @@ namespace CommandService.EventProcessing
     }
         public void ProcessEvent(string message)
         {
-            throw new System.NotImplementedException();
+            var EventType = DetermineEvent(message);
+
+
+            switch(EventType)
+            {
+                case EventType.platformPublshed:
+                // TO DO 
+                    break;
+                default:
+                    break;
+            }
+
         }
 
         private EventType DetermineEvent(string notificationMessage)
@@ -31,6 +42,7 @@ namespace CommandService.EventProcessing
             {
                 case "Platform_Published":
                     Console.WriteLine("Platform Published Event Detected");
+                    return EventType.PlatformPublished;
                 default:
                     Console.WriteLine("---> Could not determine the event type");
                     return EventType.Undetermined;
