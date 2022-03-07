@@ -2,6 +2,7 @@ using System;
 using System.Text.Json;
 using AutoMapper;
 using CommandService.Dtos;
+using CommandService.models;
 using CommandsService.Data;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -55,6 +56,25 @@ namespace CommandService.EventProcessing
             using ( var scope = _scopeFactory.CreateAsyncScope())
             {
                 var repo = scope.ServiceProvider.GetRequiredService<ICommandRepo>();
+
+                var platformPublshedDto = JsonSerializer.Deserialize<PlatformPublishedDto>(platformPublshedMessage);
+
+                try
+                {
+                    var plat = _mapper.Map<platform>(platformPublshedDto);
+                    if(!repo.ExternalPlatformExists(plat.ExternalID))
+                    {
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("--> Platform already exisits...");
+                    }
+                }
+                catch ( Exception ex)
+                {
+                    Console.WriteLine($"---> Could not add Platform to DB {ex.Message} ");
+                }
             }
         }
     }
