@@ -52,6 +52,7 @@ namespace CommandsService
             }
            // app.UseHttpsRedirection();
 
+
             app.UseRouting();
 
             app.UseAuthorization();
