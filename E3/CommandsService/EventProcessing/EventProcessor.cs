@@ -51,9 +51,9 @@ namespace CommandService.EventProcessing
             }
         }
 
-        private void addPlatform(string platformPublshedMessage)
+        private void addPlatform (string platformPublshedMessage)
         {
-            using ( var scope = _scopeFactory.CreateAsyncScope())
+            using( var scope = _scopeFactory.CreateAsyncScope())
             {
                 var repo = scope.ServiceProvider.GetRequiredService<ICommandRepo>();
 
