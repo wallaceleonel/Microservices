@@ -13,6 +13,8 @@ namespace CommandService.AsynDataService
         private IEventProcessor _eventprocessor;
         private IConnection _connection;
         private IModel _channel;
+    
+        private string _queueName;
 
         public MessageBusSubscriber(
             IConfiguration configuration , 
@@ -28,6 +30,7 @@ namespace CommandService.AsynDataService
             _connection = factory.CreateConnection(); 
             _channel = _connection.CreateModel();
             _channel.ExchangeDeclare(exchange: "trigger",type: ExchangeType.Fanout);
+            _queueName = _channel.QueueDeclare().QueueName;
         }
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
