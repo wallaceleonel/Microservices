@@ -18,7 +18,6 @@ namespace CommandService.AsynDataService
         private IModel _channel;
     
         private string _queueName;
-        private object _eventProcessor;
 
         public MessageBusSubscriber(
             IConfiguration configuration , 
@@ -53,7 +52,7 @@ namespace CommandService.AsynDataService
 
             consumer.Received += (ModuleHandle, ea) =>
             {
-                Console.WriteLine("---> Evente Received ! ");
+                Console.WriteLine("---> Event Received ! ");
 
                 var body = ea.Body;
                 var notificationMessage = Encoding.UTF8.GetString(body.ToArray());
@@ -63,7 +62,7 @@ namespace CommandService.AsynDataService
 
             _channel.BasicConsume(queue: _queueName, autoAck : true, consumer: consumer);
 
-            return Task.CompletedTask;///
+            return Task.CompletedTask;
         }
 
         private void RabbitMQ_ConnectionShutdown(Object sender, ShutdownEventArgs e )
