@@ -11,6 +11,7 @@ namespace CommandService.AsynDataService
     {
         private IConfiguration _configuration;
         private IEventProcessor _eventprocessor;
+        private IConnection _connection;
 
         public MessageBusSubscriber(
             IConfiguration configuration , 
@@ -21,10 +22,10 @@ namespace CommandService.AsynDataService
         }
         private void InitializeRabbitMQ()
         {
-            var factory = new ConnectionFactory()
-            {
-                HostName = _configuration["RabbitMQHost"], Port = int.Parse(_configuration["RabbitMQPort"])
-            };
+            var factory = new ConnectionFactory(){HostName = _configuration["RabbitMQHost"], Port = int.Parse(_configuration["RabbitMQPort"])};
+               
+            _connection = factory.CreateConnection(); 
+            
         }
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
