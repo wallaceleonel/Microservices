@@ -1139,11 +1139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A1935759\\Microservices\\E3\\CommandsService\\CommandsService.csproj",
+      "projectUniqueName": "C:\\_dev\\Microservices\\E3\\CommandsService\\CommandsService.csproj",
       "projectName": "CommandsService",
-      "projectPath": "C:\\Users\\A1935759\\Microservices\\E3\\CommandsService\\CommandsService.csproj",
+      "projectPath": "C:\\_dev\\Microservices\\E3\\CommandsService\\CommandsService.csproj",
       "packagesPath": "C:\\Users\\A1935759\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A1935759\\Microservices\\E3\\CommandsService\\obj\\",
+      "outputPath": "C:\\_dev\\Microservices\\E3\\CommandsService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A1935759\\AppData\\Roaming\\NuGet\\NuGet.Config",
