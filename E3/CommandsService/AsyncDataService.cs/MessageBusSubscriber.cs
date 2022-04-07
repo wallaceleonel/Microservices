@@ -16,9 +16,7 @@ namespace CommandService.AsynDataService
         private IEventProcessor _eventprocessor;
         private IConnection _connection;
         private IModel _channel;
-    
         private string _queueName;
-
         public MessageBusSubscriber(
             IConfiguration configuration , 
             IEventProcessor eventeprocessor)
@@ -49,7 +47,6 @@ namespace CommandService.AsynDataService
             stoppingToken.ThrowIfCancellationRequested();
 
             var consumer = new EventingBasicConsumer(_channel);
-
             consumer.Received += (ModuleHandle, ea) =>
             {
                 Console.WriteLine("---> Event Received ! ");
@@ -59,12 +56,9 @@ namespace CommandService.AsynDataService
 
                 _eventprocessor.ProcessEvent(notificationMessage);
             };
-
             _channel.BasicConsume(queue: _queueName, autoAck : true, consumer: consumer);
-
             return Task.CompletedTask;
         }
-
         private void RabbitMQ_ConnectionShutdown(Object sender, ShutdownEventArgs e )
         {
                 Console.WriteLine("---> Connection Shutdown");
@@ -76,7 +70,6 @@ namespace CommandService.AsynDataService
                 _channel.Close();
                 _connection.Close();
             }
-
         }
     }
 }
