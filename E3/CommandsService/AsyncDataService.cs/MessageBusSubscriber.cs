@@ -45,17 +45,17 @@ namespace CommandService.AsynDataService
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
             stoppingToken.ThrowIfCancellationRequested();
-
             var consumer = new EventingBasicConsumer(_channel);
             consumer.Received += (ModuleHandle, ea) =>
+            
             {
                 Console.WriteLine("---> Event Received ! ");
 
                 var body = ea.Body;
                 var notificationMessage = Encoding.UTF8.GetString(body.ToArray());
-
                 _eventprocessor.ProcessEvent(notificationMessage);
             };
+
             _channel.BasicConsume(queue: _queueName, autoAck : true, consumer: consumer);
             return Task.CompletedTask;
         }
