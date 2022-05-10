@@ -1,0 +1,11 @@
+                Entendimento  de log´s
+
+    Entender logs não e uma tarefa muito facil pois suas origens podem ser de varios pontos diferntes ao longo do desenvolvimento.
+    Criar uma estrutura que aceite varias origens para ser registrado em eventos de sua aplicação exige que vc siga uma pratica recomendada para 
+    a manutenção e usabilidade desses registros coletados,ter centanas de dados sem significado não é registro!
+
+    Uma boa pratica ao se desenvolver uma aplicação consistente e desenhar bem seus niveis de log afinal você quer coletar informações de eventos que agregam valor,isso permite que 
+    você tem um sentido logico para os seus registros de logs de acordo com a importancia merecida de cada evento passado.
+
+                Nivel de registro
+    Um Nível ou Gravidade de log e uma informação que informa a importancia de determnada msg de log.
