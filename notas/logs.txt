@@ -8,4 +8,62 @@
     você tem um sentido logico para os seus registros de logs de acordo com a importancia merecida de cada evento passado.
 
                 Nivel de registro
-    Um Nível ou Gravidade de log e uma informação que informa a importancia de determnada msg de log.
+    
+    Um Nível ou Gravidade de log e uma informação que informa a importancia de determnada msg de log.É uma maneira simples porem muito eficaz para separar niveis de msgs.
+    Se os niveis de logs forem implementados corretamente, tudo o que precisar fazer sera analisar por nivel de gravidade que foi definida.Este recurso permite que voce possa gerenciar e filtrar
+    suas informações por niveis de gravidade podendo então ser alertado ou não ao ocorrer algum evento em sua aplicação.
+
+    Desenvolvido nos anos 80, tudo começou com Syslog que definiu alguns niveis de logs para monitorar sua aplicação durante o desenvolvimento, nos tempos atuais e levado como um padrão para todo e 
+    qualquer desenvolvimento de aplicação conter registros de logs com niveis dado a sua necessidade.
+    O Syslog veio com o a seguinte ideia para definição de niveis de Gravidade :
+
+        - Emergency
+        - Alert
+        - Critical
+        - Error
+        - Warning
+        - Notice
+        - Informational
+        - Debug
+
+
+            Hierarquia de nivel de log : quais são os niveis de log mais comuns 
+
+    Na maioria das estruturas de log, você encontrara um padrão igual ou parecido com esse :
+
+        - Trace
+        - Debug
+        - Info
+        - Warn
+        - Error
+        - Fatal
+
+        TRACE = Informação refinada, usado em casos raros em que e necessario ter uma visibilidade total do que está acontecendo em seu sistema.
+
+        DEBUG = Menos granular em comparação ao nivel TRACE  porem segue com a mesma identidade, ultilizado para ter uma visibilidade total do que esta acontecendo 
+        com um filtro um pouco mais especifico podendo então acompanhar etapa a etapa de sua aplicação.
+
+        INFO = O nivel de log padrão indicando que algo aconteceu, por exemplo o aplicativo retornou um status XPTO ,requisição bem sucedida etc..etc 
+
+        ERROR =  O nivel de log que deve ser usado com o sistema retorna um problema que impede sua funcionalidade, pode ser usado com um sistema XPTO não se 
+        encontra disponivel por exemplo.
+
+        FATAL = O nivel de log que se usa quando o aplicativo encontrou um evento e teve seu funcionamento comprometido como por exemplo sua conexão a um DB  que 
+        é cruxial para seu funcionamento.
+
+                Níveis de importância
+
+           - FATAL
+
+           - ERROR
+
+           - WARN
+
+           - INFO
+
+           - DEBUG
+
+           - TRACE 
+
+
+                FATAL <--- ERROR <--- WARN <--- INFO <--- DEBUG <--- TRACE 
