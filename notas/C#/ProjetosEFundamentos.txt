@@ -1,0 +1,241 @@
+                     Tipos de projeto 
+
+.NET tem suporte para varios tipos de projeto 
+
+Definições
+    - class library 
+        - o resultado e uma DLL
+        - não possui interface
+    - Console Application 
+        - o resultadp e uma aplicação que roda no terminal 
+        - Pode receber dados, esperar input do usuario 
+    - Projetos Web
+        - ASP.NET WEB
+        - ASP.NET MVC
+        - ASP.NET WebAPI
+    - Projetos de Trest 
+        - TESTS 
+
+    Escopo de um programa
+
+        - Importações 
+                - sempre definidas por "using"
+        - Namespace
+                - separações logicas na aplicação 
+        - Classe
+                - tudo o que tiver dentro dela, é o que vai executar  
+        - Metodo Principal 
+
+    Namespace
+        - Separação logica de arquivos, enquanto pastas são separações fisicas.
+        - Seguindo por este principio, o Namespace funciona como uma pasta na logica do meu codigo.
+        - Geralmente acompanham o nome da pasta 
+        - Como não podemos ter o mesmo nome em um local não podemos ter dois Namespaces com a mesma classe 
+        como por exemplo um Namespace program com a classe teste e um Namespace com a class teste tbm ou seja posso ter varios 
+        Namespaces porem cada um com a sua classe, nuca um classe REPETIDA. 
+    
+    using
+        - as Importações define quais bibliotecas nosso programa podera ultilizar 
+        - Por padrão somente o basico e incluso 
+        - Tudo que quiser usar fora o basico e necessario fazer a importação
+        - Organização de codigo é fundamental
+        - Use e abuse da criação de arquivos e Namespaces
+
+    Variaveis 
+        - Algo que se ultiliza para guardar uma informação 
+        - Sempre se declara o tipo antes da variavel seja inteiro ou var ( var sempre assumira o valor que vc informar)
+        - var é uma abstração ( qualquer coisa, ou seja n precisa dizer se e int float double etc  )
+        - Seja expecifico no nome das variaveis, tem que ser sempre muito expecifico
+        - letra minuscula em variaveis POR CONVENSÃO.
+    
+    Constantes 
+        - Usamos para armazenar uma informação porem uma vez incluida uma informação não podemos mais alterar
+        - não pode variar 
+        - recomendada para uso frequente 
+        - definica como uma variavel porem con " const  " na frente 
+        - caso não seja informado o valor ele atribuira o da variavel padão, se tiver ele ira usar como seu valor, se não zero como padão 
+        - var não tem constante ( nulo)
+        - constante sempre em minusculo por CONVENSÃO.
+
+
+    Comentarios 
+
+        - Temos alguns tipos de Comentario que podemos adicionar no codigo para expressar informações sem que elas compilem 
+        - tipos como :
+                - uma linha  /
+                - multiplas linhas /* */
+                - XML  ( metadata) ///
+
+
+
+    Operações 
+        Atribuição
+            Ultilizamos = para atribuir um valor a algo 
+            porem, podemos ultilizar ugual jinto a aum operador aritimetico 
+            x += 5 é o mesmo que x = x +5 
+
+        Comparação 
+            Efeito de comparar dados uns com os outros 
+            Sempre que uma comparação é executada ela so pode retornar dois valores possiveis,neste caso um booleano
+
+            igual ==
+            diferente !=
+            maior que >
+            menor que <
+            maior ou igual >=
+            menor ou igual <=
+
+        Operadores logicos 
+            usado para operações codicionais 
+            sempre retorna um bool 
+                E - AND 
+                &&
+                OU - OR 
+                ||
+                NEGAÇÃO NOT
+                !
+        Estruturas Condicionais 
+            If " se tal condição for atendida, faça isso " 
+                tomada de decisções 
+                Else if ( se não )
+                não tem limites 
+                porem nao e legal ter mtos no nosso codigo 
+                if sempre ture e else sempre false 
+                if { condição }
+            Switch
+                ultilixamos quando se tem muitas tomadas de decisão
+                executado em cascata 
+                devemos parar manualmente usando break
+                possui um "else " chamado Default 
+
+        Laços de repetição 
+            tradução "para" ou seja para cada item um valor 
+            executa uma determinada ação varias vezes 
+            Definido pela paravra for
+            Exige 3 parametros 
+                contador
+                condição 
+                incrimento 
+                    for ( var i -0 ; i <=5; i++)
+            While 
+                enquanto uma condição for verdadeira, executara aquilo 
+                Checa a condição ANTES de executar 
+                    While(valor <= 5)
+                    { condição }                    
+            do While
+                faça enquanto 
+                Checa a condição DEPOIS de executar 
+                do {
+                    condição
+                }While(valor < 5 )
+        Tipos de Referencia 
+            a memoria é dividida em dois lugares Heap Stack 
+             Heap armazena dados 
+             Stack armazena Referencia
+            built-in, structs, enums
+            garbage collector não acessa o stack 
+                ele é o reciclador, o que não está em uso ele apaga 
+                atua em classes, objects, arrays ...
+
+
+
+    Operações 
+        Atribuição
+            Ultilizamos = para atribuir um valor a algo 
+            porem, podemos ultilizar ugual jinto a aum operador aritimetico 
+            x += 5 é o mesmo que x = x +5 
+
+        Comparação 
+            Efeito de comparar dados uns com os outros 
+            Sempre que uma comparação é executada ela so pode retornar dois valores possiveis,neste caso um booleano
+
+            igual ==
+            diferente !=
+            maior que >
+            menor que <
+            maior ou igual >=
+            menor ou igual <=
+        Operadores logicos 
+            usado para operações codicionais 
+            sempre retorna um bool 
+                E - AND 
+                &&
+                OU - OR 
+                ||
+                NEGAÇÃO NOT
+                !
+                     Estruturas Condicionais 
+            If " se tal condição for atendida, faça isso " 
+                tomada de decisções 
+                Else if ( se não )
+                não tem limites 
+                porem nao e legal ter mtos no nosso codigo 
+                if sempre ture e else sempre false 
+                if { condição }
+            Switch
+                ultilixamos quando se tem muitas tomadas de decisão
+                executado em cascata 
+                devemos parar manualmente usando break
+                possui um "else " chamado Default 
+
+        Laços de repetição 
+            tradução "para" ou seja para cada item um valor 
+            executa uma determinada ação varias vezes 
+            Definido pela paravra for
+            Exige 3 parametros 
+                contador
+                condição 
+                incrimento 
+                    for ( var i -0 ; i <=5; i++)
+              While 
+                enquanto uma condição for verdadeira, executara aquilo 
+                Checa a condição ANTES de executar 
+                    While(valor <= 5)
+                    { condição }                    
+            do While
+                faça enquanto 
+                Checa a condição DEPOIS de executar 
+                do {
+                    condição
+                }While(valor < 5 )
+
+         Tipos de Referencia 
+            a memoria é dividida em dois lugares Heap Stack 
+             Heap armazena dados 
+             Stack armazena Referencia
+            built-in, structs, enums
+            garbage collector não acessa o stack 
+                ele é o reciclador, o que não está em uso ele apaga 
+                atua em classes, objects, arrays ...
+        Structs
+            tipos de dados Estruturados
+            apenas a Estrutura, o esqueleto 
+            é um value tipe 
+            armazenam apenas outros tipos de dados
+            Composto por propriedades e metodos
+            ajuda na Organização do projeto 
+            struct Product
+            {
+                // Propiedades 
+                // metodos 
+            }
+        Enums
+            usado para forncexer uma melhor vizualização de codigo 
+            subistituem o uso de inteiros 
+            usados em listas curtas 
+            usados em dados fixos 
+                hard Coded  
+            sempre em maiusculo 
+                começa com a letra E 
+            enum EEstadoCivil   
+            {
+                Solteiro = 1,
+                Casado = 2,
+                Divorciado = 3,
+            }
+        EnumMemberAttribute Class
+
+                O EnumMemberAttribute permite o controle preciso dos nomes das enumerações à medida que são serializados.
+
+Para usar EnumMemberAttribute , crie uma enumeração e aplique o atributo DataContractAttribute à enumeração. Em seguida, 
+aplique o atributo EnumMemberAttribute a cada membro que precisa estar no fluxo de serialização.

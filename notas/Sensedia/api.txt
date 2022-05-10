@@ -1,0 +1,91 @@
+        Construção API´s
+
+No campo principal temos alguns campos de atalho no card da API
+
+podemos criar uma api , importar api 
+criar uma api graphic e uma identity 
+
+ - Ao criar passamos informações basicar como nome
+    versão 
+    status ( como por exemplo em desenvolvimento)
+    comentario 
+    Enviroments onde vamos colocar essa API para criação 
+    
+
+            Interceptor
+
+temos duas categorias de Interceptadores ,Interceptadores pre definidos e Interceptadores constumizaveis
+
+    Interceptadores pre definidos tem 5 categorias:
+        trafego, segurança, mediação, tracing e transformação.  
+
+    Interceptadores constumizaveis são separados por algumas categorias:
+
+        custom javascript 
+        custom java 
+        
+
+
+
+            Planos 
+
+
+                                   ----app----at1...at2...
+                                  |
+     |------- pano-----------------app---at1....at2.....
+     | 
+    api
+     |
+     |-------plano--------------app-------at1...at2....
+
+
+     planos Defaut são restritos apenas a uma api , ou seja possui restrições.
+     plano delimita uso de recursos e requisições de uma API, posso tambem indexa varias api em um plano ou vice versa...
+
+
+
+                Cadastro de APPs
+
+
+    efetuado pelo manager ou portal desenvolvedor 
+
+
+                Autenticação na API
+    
+
+    colocar Interceptor de Autenticação no fluxo flow 
+
+    após escolher uma metodo de auth ele vai ser  aplicado a minha API e so podeira acessar suas chamadas 
+    e após me autenticar conforme e solicitado 
+    exitem alguns tipo e metodos para essa validação 
+
+
+
+                Analitics Kibana
+
+        o produto faz o uso de uma ferramenta chamada Kibana, encotrada na opção advancede Analitics
+
+
+        possivel ver o fluxo de requisições apresentados por indices 
+        idices de calls e indices de metricas 
+
+        indices de call tem um nivel muito maior devido a granulidade, possuir muitas informações 
+        tem duração nos registros de ate 7 dias ou atinja o limite contratado 
+
+        metrics não tem limite de storage e mantem ate 90 dias os registros porem tem muito menos informação 
+        informação de negocios e não para um troable chute 
+
+
+
+                    Documentação 
+
+
+            online help acesso a Documentação
+
+            Guia do usuario 
+            
+            release notes 
+             
+            Dev portal 
+
+            https://docs.sensedia.com/en/api-platform-guide/4.7.x.x/index.html

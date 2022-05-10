@@ -1,0 +1,43 @@
+                            Fundamentos do C#
+
+    Frameworks
+        - Alicerce a onde construo aplicações
+        - Conjunto de bibliotecas que unidas chamamos de Frameworks
+        - Para não precisar fazer tudo do zero 
+        
+        A ideia e trazer recursos do dia dia reunidos para ser ultilizado de forma segura, validada e pratica
+
+
+    .NET Framework
+        - tem como base C# 
+        - O Framework se chama .NET
+        - Considerado legado 
+        - Compativel somente com Windows
+        
+    .NET Core 
+        - Versão moderna 
+        - Compativel com todas as plataformas 
+        - Continua sendo um Framework
+        - Foi totalmente reescrito 
+        - Core significa nucleo ou seja,essencial ( ou seja o basico de tudo )
+        
+    .NET Standard
+        - Versão que coexistem as duas versões , core e Framework
+        - Pode ser ultilizado entre as duas plataformas
+        - Não e um Framework, é apenas um contrato entre os dois Frameworks tanto core quanto Framework
+
+    .NET 5
+        - Unificação dos dois Frameworks 
+        - tudo em um unico pacote chamado NET 5 
+
+    Versionamento
+        - dividida em 3 partes 
+            - major - minior - patch 
+        - major : mudanças grandes que pode ver imcompatibilidade com versoes anteriores 
+        - minior possui mudanças porem é Compativel
+        patch  mudanças simples 
+        - Definições 
+            -Alpha 0.0.1-a1 
+            -Beta  0.0.2-b1
+            -Release Candidate 1.0.0.-rc1 
+            final 1.0.0
