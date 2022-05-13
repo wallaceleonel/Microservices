@@ -1,0 +1,43 @@
+                    Clean Code
+
+    A manutenção de um software e tão importante quanto a sua construção 
+    por isso falamos tanto atualmente no centeito de clean code, como Robert C descreveu em seu livro, algumas praticas e visões 
+    de nossa área, algu,as práticas  são importantissimas para mantermos a vida de nosso software.
+
+    Regras Gerais 
+
+    - Siga as convenções
+
+        Se  você comecou um projeto ou acabaram de definir suas convenções,siga-as!
+        sempre siga o padrão de projeto!
+    
+    - Kiss
+
+        Mantenha as coisas simples! este conceito vem até de outro livro.Normalmente tendemos a complicas as coisas 
+        que poderiam ser muito mais simples, siga sempre o conceito KISS, MANTENHA TUDO  
+        ESTUPIDAMENTE SIMPLES 
+
+    - Regra de escoteiro 
+
+        "Deixe sempre o acampamento mais limpo do que você entrou " O mesmo vale para o codigo
+        Devolva sempre um codigo melhor do que o que vc recebeu.
+
+    - Causa raiz 
+
+        Sempre procure a causa raiz do problema, nunca resolva as coisas superficialmente.No dia-dia, temos que corrigir diversos problemas 
+        porem não nos atentamos a causa raiz do problema o que gera um retrabalho.
+
+    Regras de design
+
+    - Mantenha dados de configuração em alto nível
+
+        Algo que toda aplicação tem são suas configurações, como aas conhecidas 
+        "ConnectionStrings" tente sempre deixar essas configurações em um alto nivel ou "parse" delas em um nivel mais alto possivel 
+        Evite escrever metodos dentro de controllers ou algo do tipo. Se possivel mantenha esta passagem no método principal, no inicio da aplicação e não mexa ! 
+
+    Exemplo:
+
+        Crie uma classe 'Settings' no projeto base e depois no Startup das aplicações  
+
+
+
