@@ -45,4 +45,10 @@
         }
         "
 
-        
+    - Polimorfismo no lugar de IFs 
+
+        Um IF  ou condicional como o propio nome diz, traz uma tomada de decisão a nossa aplicação, o que implica no aumento da 
+        complexidade da mesma.No geral devemos evidar o uso excessivo destes.
+
+        Nestes cenários,opte sempre pelo Polimorfismo ao invés de tomar decisão em todo método que cria.
+               
