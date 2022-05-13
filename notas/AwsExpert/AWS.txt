@@ -1,0 +1,47 @@
+
+
+            Caracteristicas e Vantagens 
+
+    - Agilidade
+
+    - Mantimento
+
+    - Reabilitação 
+
+    - Segurança
+
+    - Performance
+
+    - Escalabilidade
+
+    - Custo e elasticidade
+
+
+                Modelos comercializados 
+
+    - IaaS(Infra as a Service) 
+        infraestrutura como serviço.
+    
+    - PaaS (Plataform as a Service)
+        Plataforma como serviço, esta uma camada a baixo do IaaS 
+        não quero saber o que vou ultilizar, com o que eu tenho por trás dos panos simplismente quero subir um serviço e o PaaS 
+        vai montar toda infra para me atender com a aplicação rodandando.
+
+    - FaaS ( Function as a Service)
+        Produto mais granular, um micro do micro serviço ou seja uma unica função como a função enviar Email ou seja ela e uma função como serviço.
+
+
+                Modelos de Deployment
+    - Private cloud 
+        cloud somente seu 
+    - Public  cloud 
+        cloud que todos usam 
+        AWS ORACLE ... etc etc 
+    - Hybrid cloud
+        Passeia entre os dois metodos acima, tem partes privadas e partes abertas 
+    - Multicloud
+        Ultilizar todos os seus serviços em todos os clouds para não ter dependencia em um cloud especifico
+        porem existem complicações nesse metodo atualmente 
+    - Community
+        Empresas se reuniem e constroem um cloud para que todas ultilizem 
+        modelo privado que usa conceitos do publico 
