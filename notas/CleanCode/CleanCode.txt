@@ -37,7 +37,30 @@
 
     Exemplo:
 
-        Crie uma classe 'Settings' no projeto base e depois no Startup das aplicações  
+        Crie uma classe 'Settings' no projeto base e depois no Startup das aplicações
+        deixando centralizada configurações estaticas e não espalhadas pelo codigo.
 
+       " MeuProjeto.Domain
 
+        public static class Settings {
+        public static string ConnectionString { get; set; }
+        }
+        
+        "
+        "
+         MeuProjeto.Api
+
+        public Startup(IConfiguration configuration)
+        {
+        Configuration = configuration;
+        Settings.ConnectionString = Configuration.GetConnectionString("connectionString");
+        }
+        "
+        "
+        MeuProjeto.Infra
+
+        using(var connection = new SqlConnection(Settings.ConnectionString)) {
+            ...
+        }
+        "
 
