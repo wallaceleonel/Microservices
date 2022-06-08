@@ -9,7 +9,6 @@ namespace TextEditor
             {
                 Menu();
             }
-
             static void Menu()
             {
                 Console.Clear();
@@ -38,7 +37,6 @@ namespace TextEditor
                     string text = file.ReadToEnd();
                     Console.WriteLine(text);
                 }
-
                     Console.WriteLine("");
                     Console.ReadLine();
                     Menu();
@@ -49,7 +47,6 @@ namespace TextEditor
                 Console.WriteLine("Digite seu texto abaixo(ESQ para sair)");
                 Console.WriteLine("-------------------");
                 string text = "";
-
                 do
                 {
                     text +=  Console.ReadLine();
@@ -61,7 +58,6 @@ namespace TextEditor
 
                 Save(text);
             }
-
             static void Save ( string text)
             {
                 Console.Clear();
