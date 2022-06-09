@@ -1,4 +1,3 @@
-
 O ASP.NET Core dá suporte ao padrão de design de software de injeção de dependência (DI),
 que é uma técnica para obter a Inversão de Controle (IoC) entre classes e suas dependências.
 
@@ -34,10 +33,6 @@ Setter injection.
 
 Posso fazer o uso dessa pratica declarando { get set } e utilizando em minha chamada fazendo e claro o uso da minha interface para realizar a aplicação da dependência.
 
-
 method injection or interface injection.
-
-
-
 
 Sendo o código fica dependente de ABSTRAÇÕES que é uma interface e não de uma implementação como um método "new" por exemplo.
