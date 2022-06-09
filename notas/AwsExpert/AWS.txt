@@ -1,6 +1,4 @@
-
-
-            Caracteristicas e Vantagens 
+                            Caracteristicas e Vantagens 
 
     - Agilidade
 
@@ -17,7 +15,7 @@
     - Custo e elasticidade
 
 
-                Modelos comercializados 
+                                Modelos comercializados 
 
     - IaaS(Infra as a Service) 
         infraestrutura como serviço.
@@ -31,7 +29,8 @@
         Produto mais granular, um micro do micro serviço ou seja uma unica função como a função enviar Email ou seja ela e uma função como serviço.
 
 
-                Modelos de Deployment
+                                Modelos de Deployment
+
     - Private cloud 
         cloud somente seu 
     - Public  cloud 
